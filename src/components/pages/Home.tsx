@@ -45,10 +45,10 @@ export default function Home({ onNavigate }: HomeProps) {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 md:space-y-8">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl text-gray-900">
-                Elevate Your Team's{' '}
-                <span className="text-[#2D5BFF]">Soft Skills</span>
-              </h1>
+             <h1 className="text-4xl md:text-5xl lg:text-6xl text-gray-900">
+  Nurturing <br/>the <span className="text-[#2D5BFF]">leaders</span> of tomorrow
+</h1>
+
               <p className="text-lg md:text-xl text-gray-600">
                 Transform your workforce and students with comprehensive soft skill training programs designed for the modern professional landscape.
               </p>
