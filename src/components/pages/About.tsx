@@ -32,18 +32,18 @@ export default function About() {
 
   const team = [
     {
-      name: 'Sarah Mitchell',
-      role: 'CEO & Founder',
+      name: 'Deva Kiruba',
+      role: 'Director / Founder',
       image: mamPic,
       bio:
-        'With over 15 years of experience in corporate training and organizational development, Sarah founded MAG to revolutionize soft skills training for the modern workforce.',
+        'Deva has over 16 years of Hospitality and Technical head-hunting expertise. With over a decade and a half of people handling skills and diverse industry expertise across US, Canada, Australian and Pan-Asian market. She brings in high command in communication and expertise in Tech and Non-Tech Career Guidance for the Early career graduates and the Experienced. Her core strengths are Negotiation and People skills.',
     },
     {
-      name: 'David Anderson',
-      role: 'Chief Training Officer',
+      name: 'Aravind Murugan',
+      role: 'Director / co founder',
       image: sirPic,
       bio:
-        'David brings 20 years of expertise in leadership development and has trained thousands of professionals across diverse industries globally.',
+        'Aravind is an Engineer with over a decade of Technical and Non -Technical head-hunting Global Resource across US, Canada, Australian and Pan-Asian market. He has been the Dealmaker for most of the Hi-Tech and Fin-Tech Clients he worked with globally. He converts the demanding clients to a workable prospect. He carries a strong Client and Vendor management expertise. Closing the Deals and Stakeholder Management are his core strength.',
     },
   ];
 
