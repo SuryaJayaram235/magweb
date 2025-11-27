@@ -32,7 +32,7 @@ export default function Home({ onNavigate }: HomeProps) {
   ];
 
   const instagramPosts = [
-    { id: 1, image: 'https://drive.google.com/file/d/1oDSyG0KNewTOfBXkl_-dd8nPPSFlVIB-/view?usp=drive_link' },
+    { id: 1, image: 'magweb/src/assets/IMG_instagram pic8695.JPG' },
     { id: 2, image: 'https://images.unsplash.com/photo-1690264421892-46e3af5c3455?w=400' },
     { id: 3, image: 'https://images.unsplash.com/photo-1761250246894-ee2314939662?w=400' },
     { id: 4, image: 'https://images.unsplash.com/photo-1758270704534-fd9715bffc0e?w=400' },
