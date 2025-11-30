@@ -159,12 +159,10 @@ export default function About() {
               >
                 {/* image wrapper: relative so overlay can be absolute */}
                 <div className="relative w-full h-72 md:h-96 overflow-hidden">
-                  {/* If your ImageWithFallback forwards className to its <img>, this will apply correctly.
-                      If you find styling isn't applied, temporarily swap to <img src={member.image} ... /> to test. */}
-                  <ImageWithFallback
+                  <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover block"
+                    className="w-full h-full object-contain block bg-white"
                   />
                   <div className="absolute inset-0 pointer-events-none bg-linear-to-t from-[#2D5BFF]/90 via-[#2D5BFF]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
