@@ -69,11 +69,12 @@ export default function Contact() {
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#2D5BFF]/5 to-white">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-gray-900 mb-6">
-            Get In <span className="text-[#2D5BFF]">Touch</span>
+           Let’s get <span className="text-[#2D5BFF]">connected</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-            Have questions about our programs? Want to discuss a custom training solution? We'd love to hear from you.
-          </p>
+We welcome your inquiries and are committed to providing prompt and helpful support. 
+Connect with us for assistance, collaboration, or custom solutions.
+          </p>            
         </div>
       </section>
 
@@ -199,36 +200,36 @@ export default function Contact() {
             {/* Map / Additional Info */}
             <div className="space-y-8">
               <Card className="p-8 bg-white rounded-3xl border-none shadow-lg">
-                <h3 className="text-2xl text-gray-900 mb-4">Why Contact Us?</h3>
+                <h3 className="text-2xl text-gray-900 mb-4">Why Choose Us?</h3>
                 <ul className="space-y-4 text-gray-600">
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-[#2D5BFF] rounded-full mt-2"></div>
-                    <span>Get personalized program recommendations</span>
+                    <span>Tailored recommendations for training, upskilling, and workforce optimization </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-[#2D5BFF] rounded-full mt-2"></div>
-                    <span>Request a custom training proposal</span>
+                    <span>Custom solutions for institutional training and organizational talent development </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-[#2D5BFF] rounded-full mt-2"></div>
-                    <span>Schedule a consultation with our experts</span>
+                    <span>Direct consultation with industry experts in learning and workforce  <br />strategy </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-[#2D5BFF] rounded-full mt-2"></div>
-                    <span>Discuss collaboration opportunities</span>
+                    <span>Access to our workforce placement and client-matching services </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-[#2D5BFF] rounded-full mt-2"></div>
-                    <span>Learn about pricing and packages</span>
+                    <span>Transparent pricing models and long-term collaboration opportunities</span>
                   </li>
                 </ul>
               </Card>
 
               {/* FAQ Card */}
               <Card className="p-8 bg-gradient-to-br from-[#2D5BFF] to-[#1E40CC] text-white rounded-3xl border-none shadow-lg">
-                <h3 className="text-2xl mb-4">Quick Response</h3>
+                <h3 className="text-2xl mb-4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quick Response</h3>
                 <p className="text-lg opacity-90">
-                  Our team typically responds to inquiries within 24 hours during business days. For urgent matters, please call us directly.
+                 “Responses are usually provided within 24 hours on business  days. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For urgent concerns, please contact our  team directly.”
                 </p>
               </Card>
             </div>
