@@ -39,7 +39,7 @@ export default function Contact() {
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email Us',
-      detail: 'info@magresourcerevolution .com',
+      detail: 'info@magresourcerevolution.com',
       link: 'mailto:info@magresourcerevolution.com',
     },
     {

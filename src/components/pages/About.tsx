@@ -155,7 +155,7 @@ export default function About() {
             {team.map((member, index) => (
               <Card
                 key={index}
-                className="bg-white rounded-3xl border-none shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden group cursor-pointer flex flex-col h-full"
+                className="bg-white rounded-3xl border-none shadow-lg hover:shadow-2xl hover:shadow-blue-600 hover:-translate-y-2 transition-all duration-300 overflow-hidden group cursor-pointer flex flex-col h-full"
               >
                 {/* image wrapper: relative so overlay can be absolute */}
                 <div className="relative w-full h-72 md:h-96 overflow-hidden">
@@ -164,7 +164,6 @@ export default function About() {
                     alt={member.name}
                     className="w-full h-full object-contain block bg-white"
                   />
-                  <div className="absolute inset-0 pointer-events-none bg-linear-to-t from-[#2D5BFF]/90 via-[#2D5BFF]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
 
                 <div className="p-8 grow">
