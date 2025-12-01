@@ -2,7 +2,7 @@ import { ArrowRight, Users, Target, Award, TrendingUp, Instagram } from 'lucide-
 import { ImageWithFallback } from '../figma/ImageWithFallback';
 import { Button } from '../ui/button';
 import { Card } from '../ui/card';
-import instagrampic1 from '../../assets/instagram-pic1.JPG';
+
 
 interface HomeProps {
   onNavigate: (page: string) => void;
