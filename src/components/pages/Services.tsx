@@ -149,7 +149,7 @@ export default function Services({ onNavigate }: ServicesProps) {
             {services.map((service, index) => (
               <Card
                 key={index}
-                className="p-8 bg-white rounded-3xl border-none shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 relative overflow-hidden flex flex-col"
+                className="p-8 bg-white rounded-3xl border-none shadow-lg hover:shadow-blue-300 hover:-translate-y-2 transition-all duration-300 relative overflow-hidden flex flex-col"
               >
                 {service.popular && (
                   <Badge className="absolute top-6 right-6 bg-[#2D5BFF] text-white px-3 py-1 rounded-full">
@@ -206,7 +206,7 @@ export default function Services({ onNavigate }: ServicesProps) {
             {customSolutions.map((solution, index) => (
               <Card
                 key={index}
-                className="p-8 bg-white rounded-2xl border-2 border-gray-100 hover:border-[#2D5BFF] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center"
+                className="p-8 bg-white rounded-2xl border-2 border-gray-100 hover:border-[#2D5BFF] shadow-md hover:shadow-blue-300 hover:-translate-y-1 transition-all duration-300 text-center"
               >
                 <h3 className="text-xl text-gray-900 mb-3">{solution.title}</h3>
                 <p className="text-gray-600">{solution.description}</p>
@@ -251,24 +251,6 @@ export default function Services({ onNavigate }: ServicesProps) {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-linear-to-br from-[#2D5BFF] to-[#1E40CC]">
-        <div className="max-w-4xl mx-auto text-center text-white">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl mb-6">
-            Ready to Get Started?
-          </h2>
-          <p className="text-lg md:text-xl mb-8 opacity-90">
-            Let's discuss which service is right for your organization or team.
-          </p>
-          <Button
-            onClick={() => onNavigate('Contact')}
-            className="bg-white text-[#2D5BFF] hover:bg-gray-100 px-8 py-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
-          >
-            Contact Us Today
-            <ArrowRight className="ml-2" />
-          </Button>
-        </div>
-      </section>
     </div>
   );
 }

@@ -227,7 +227,7 @@ export default function Clients({ onNavigate }: ClientsProps) {
             {stats.map((stat, index) => (
               <Card
                 key={index}
-                className="p-6 md:p-8 bg-white rounded-2xl border-none shadow-lg hover:shadow-[0_20px_60px_-15px_rgba(45,91,255,0.3)] hover:-translate-y-2 transition-all duration-300 group"
+                className="p-6 md:p-8 bg-white rounded-2xl border-none shadow-lg hover:shadow-blue-300 hover:-translate-y-2 transition-all duration-300 group"
               >
                 <div className="flex flex-col">
                   <p className="text-4xl md:text-5xl text-[#2D5BFF] mb-3 group-hover:scale-110 transition-transform duration-300">
@@ -288,7 +288,7 @@ export default function Clients({ onNavigate }: ClientsProps) {
             {filteredClients.map((client) => (
               <Card
                 key={client.id}
-                className="p-6 bg-white rounded-2xl border-none shadow-lg hover:shadow-[0_20px_60px_-15px_rgba(45,91,255,0.4)] hover:-translate-y-2 transition-all duration-300 group cursor-pointer relative"
+                className="p-6 bg-white rounded-2xl border-none shadow-lg hover:shadow-blue-300 hover:-translate-y-2 transition-all duration-300 group cursor-pointer relative"
               >
                 {/* Sector Badge */}
                 <Badge 
@@ -357,7 +357,7 @@ export default function Clients({ onNavigate }: ClientsProps) {
             {caseStudies.map((study, index) => (
               <Card
                 key={index}
-                className="overflow-hidden bg-white rounded-3xl border-none shadow-lg hover:shadow-[0_20px_60px_-15px_rgba(45,91,255,0.3)] hover:-translate-y-1 transition-all duration-300"
+                className="overflow-hidden bg-white rounded-3xl border-none shadow-lg hover:shadow-blue-300 hover:-translate-y-1 transition-all duration-300"
               >
                 <div className={`grid lg:grid-cols-2 gap-0 ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
                   <div className={`${index % 2 === 1 ? 'lg:order-2' : ''}`}>
@@ -419,7 +419,7 @@ export default function Clients({ onNavigate }: ClientsProps) {
             {testimonials.map((testimonial, index) => (
               <Card
                 key={index}
-                className="p-8 bg-white rounded-3xl border-none shadow-lg hover:shadow-[0_20px_60px_-15px_rgba(45,91,255,0.4)] hover:-translate-y-2 transition-all duration-300 relative"
+                className="p-8 bg-white rounded-3xl border-none shadow-lg hover:shadow-blue-300 hover:-translate-y-2 transition-all duration-300 relative"
               >
                 <Quote className="w-10 h-10 text-[#2D5BFF]/20 absolute top-6 right-6" />
                 <div className="flex gap-1 mb-6">
@@ -463,7 +463,7 @@ export default function Clients({ onNavigate }: ClientsProps) {
             {benefits.map((benefit, index) => (
               <Card
                 key={index}
-                className="p-8 bg-white rounded-2xl border-none shadow-lg hover:shadow-[0_20px_60px_-15px_rgba(45,91,255,0.3)] hover:-translate-y-2 transition-all duration-300"
+                className="p-8 bg-white rounded-2xl border-none shadow-lg hover:shadow-blue-300 hover:-translate-y-2 transition-all duration-300"
               >
                 <div className="bg-linear-to-br from-[#2D5BFF]/10 to-[#2D5BFF]/5 w-14 h-14 rounded-2xl flex items-center justify-center text-[#2D5BFF] mb-4">
                   {benefit.icon}
@@ -476,32 +476,6 @@ export default function Clients({ onNavigate }: ClientsProps) {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-linear-to-br from-[#2D5BFF] to-[#1E40CC]">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl text-white mb-6">
-            Ready to Transform Your Organization?
-          </h2>
-          <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Join hundreds of leading organizations worldwide that trust MAGRR to develop their teams, enhance capabilities, and drive measurable success.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              onClick={() => onNavigate('Contact')}
-              className="bg-white text-[#2D5BFF] hover:bg-gray-100 px-8 py-6 rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
-            >
-              Schedule a Consultation
-            </Button>
-            <Button
-              onClick={() => onNavigate('Services')}
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white/10 px-8 py-6 rounded-xl backdrop-blur-sm hover:scale-105 transition-all duration-300"
-            >
-              Explore Our Services
-            </Button>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
