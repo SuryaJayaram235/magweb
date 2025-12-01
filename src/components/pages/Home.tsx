@@ -121,6 +121,25 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
       </section>
 
+      {/* CTA Section */}
+      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-linear-to-br from-[#2D5BFF] to-[#1E40CC]">
+        <div className="max-w-4xl mx-auto text-center text-white">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl mb-6">
+            Ready to Transform Your Team?
+          </h2>
+          <p className="text-lg md:text-xl mb-8 opacity-90">
+            Join hundreds of organizations that trust MAGRR for their soft skills training needs.
+          </p>
+          <Button
+            onClick={() => onNavigate('Contact')}
+            className="bg-white text-[#2D5BFF] hover:bg-gray-100 px-8 py-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
+          >
+            Schedule a Consultation
+            <ArrowRight className="ml-2" />
+          </Button>
+        </div>
+      </section>
+
       {/* Instagram Section */}
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -162,24 +181,7 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-linear-to-br from-[#2D5BFF] to-[#1E40CC]">
-        <div className="max-w-4xl mx-auto text-center text-white">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl mb-6">
-            Ready to Transform Your Team?
-          </h2>
-          <p className="text-lg md:text-xl mb-8 opacity-90">
-            Join hundreds of organizations that trust MAGRR for their soft skills training needs.
-          </p>
-          <Button
-            onClick={() => onNavigate('Contact')}
-            className="bg-white text-[#2D5BFF] hover:bg-gray-100 px-8 py-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
-          >
-            Schedule a Consultation
-            <ArrowRight className="ml-2" />
-          </Button>
-        </div>
-      </section>
+      
     </div>
   );
 }
