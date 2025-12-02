@@ -141,16 +141,16 @@ export default function Services({ onNavigate }: ServicesProps) {
           </div>
         </div>
       </section>
-
-      {/* Services Grid */}
+      
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((service, index) => (
               <Card
-                key={index}
-                className="p-8 bg-white rounded-3xl border-gray-100 hover:border-[#2D5BFF] shadow-lg hover:shadow-blue-300 hover:-translate-y-2 transition-all duration-300 relative overflow-hidden flex flex-col"
-              >
+  key={index}
+  className="group p-8 bg-white rounded-3xl border-none shadow-lg hover:shadow-blue-300 hover:-translate-y-2 transition-all duration-300 relative overflow-hidden flex flex-col"
+>
+
                 {service.popular && (
                   <Badge className="absolute top-6 right-6 bg-[#2D5BFF] text-white px-3 py-1 rounded-full">
                     Popular
@@ -179,40 +179,31 @@ export default function Services({ onNavigate }: ServicesProps) {
                   ))}
                 </div>
 
-                {/* AWS-style minimal CTA */}
-                <Button
-                  onClick={() => onNavigate('Contact')}
-                  variant="ghost"
-                  className="mt-auto px-0 py-0 h-auto bg-transparent shadow-none hover:bg-transparent text-gray-900 font-medium flex items-center gap-1.5 transition-all duration-300"
-                >
-                  {/* Text slides in when card hovered; hidden (width 0) otherwise */}
-                  <span
-                    className="
-                      inline-block overflow-hidden whitespace-nowrap
-                      max-w-0 group-hover:max-w-[120px]
-                      transition-all duration-300
-                    "
-                  >
-                    <span
-                      className="
-                        inline-block -translate-x-3 group-hover:translate-x-0
-                        transition-transform duration-300
-                      "
-                    >
-                      Learn more
-                    </span>
-                  </span>
+              <button
+  onClick={() => onNavigate('Contact')}
+  className="mt-auto flex items-center gap-2 text-gray-900 font-medium"
+>
+  <span
+    className="
+      transition-all duration-300
+      opacity-0 -translate-x-2
+      group-hover:opacity-100 group-hover:translate-x-0
+    "
+  >
+    Learn more
+  </span>
 
-                  {/* Arrow always visible, nudges right on hover */}
-                  <ArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
-                </Button>
-              </Card>
-            ))}
-          </div>
-        </div>
+  <ArrowRight
+    className="transition-transform duration-300 group-hover:translate-x-1"
+  />
+</button>  
+ </Card>
+      ))}
+     </div>
+      </div>
       </section>
 
-      {/* Custom Solutions */}
+      
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 md:mb-16">
@@ -225,10 +216,10 @@ export default function Services({ onNavigate }: ServicesProps) {
           </div>
           <div className="grid md:grid-cols-3 gap-6 md:gap-8">
             {customSolutions.map((solution, index) => (
-              <Card
-                key={index}
-                className="p-8 bg-white rounded-2xl border-2 border-gray-100 hover:border-[#2D5BFF] shadow-md hover:shadow-blue-300 hover:-translate-y-1 transition-all duration-300 text-center"
-              >
+             <Card
+  key={index}
+  className="group p-8 bg-white rounded-3xl border-none shadow-lg hover:shadow-blue-300 hover:-translate-y-2 transition-all duration-300 relative overflow-hidden flex flex-col"
+>
                 <h3 className="text-xl text-gray-900 mb-3">{solution.title}</h3>
                 <p className="text-gray-600">{solution.description}</p>
               </Card>
@@ -237,7 +228,7 @@ export default function Services({ onNavigate }: ServicesProps) {
         </div>
       </section>
 
-      {/* Process Section */}
+      
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 md:mb-16">
