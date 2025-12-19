@@ -205,8 +205,8 @@ export default function Clients({ onNavigate }: ClientsProps) {
   return (
     <div className="min-h-screen pt-16 md:pt-20 bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute inset-0 bg-linear-to-br from-[#2D5BFF]/5 via-white to-[#2D5BFF]/5"></div>
+      
+      
         <div className="max-w-7xl mx-auto relative">
           <div className="text-center mb-12">
             <Badge className="mb-6 bg-[#2D5BFF]/10 text-[#2D5BFF] hover:bg-[#2D5BFF]/20 px-4 py-2 border-none">
@@ -222,7 +222,7 @@ export default function Clients({ onNavigate }: ClientsProps) {
             </p>
           </div>
 
-          {/* Stats Grid */}
+          {/* Stats Grid 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mt-16">
             {stats.map((stat, index) => (
               <Card
@@ -238,12 +238,12 @@ export default function Clients({ onNavigate }: ClientsProps) {
                 </div>
               </Card>
             ))}
-          </div>
+          </div>*/}
         </div>
-      </section>
+      
 
       {/* Client Portfolio Section with Filters */}
-      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+     {/* <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl text-gray-900 mb-4">
@@ -252,9 +252,9 @@ export default function Clients({ onNavigate }: ClientsProps) {
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
               Explore the diverse range of organizations we've partnered with
             </p>
-          </div>
+          </div> 
 
-          {/* Category Filter Buttons */}
+          
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             {categories.map((category) => (
               <Button
@@ -275,7 +275,7 @@ export default function Clients({ onNavigate }: ClientsProps) {
             ))}
           </div>
 
-          {/* Results Count */}
+          
           <div className="text-center mb-8">
             <p className="text-gray-600">
               Showing <span className="text-[#2D5BFF]">{filteredClients.length}</span> of{' '}
@@ -283,14 +283,14 @@ export default function Clients({ onNavigate }: ClientsProps) {
             </p>
           </div>
 
-          {/* Client Logos Grid */}
+          
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
             {filteredClients.map((client) => (
               <Card
                 key={client.id}
                 className="p-6 bg-white rounded-2xl border-gray-100 hover:border-[#2D5BFF] shadow-lg hover:shadow-blue-300 hover:-translate-y-2 transition-all duration-300 group cursor-pointer relative"
               >
-                {/* Sector Badge */}
+                
                 <Badge 
                   className={`absolute top-3 right-3 px-2 py-1 text-xs border-none ${
                     client.sector === 'private' 
@@ -318,7 +318,7 @@ export default function Clients({ onNavigate }: ClientsProps) {
             ))}
           </div>
 
-          {/* Empty State */}
+          
           {filteredClients.length === 0 && (
             <div className="text-center py-16">
               <div className="bg-gray-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -337,7 +337,7 @@ export default function Clients({ onNavigate }: ClientsProps) {
             </div>
           )}
         </div>
-      </section>
+      </section> */}
 
       {/* Featured Case Studies */}
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
@@ -399,7 +399,7 @@ export default function Clients({ onNavigate }: ClientsProps) {
             ))}
           </div>
         </div>
-      </section>
+      </section> 
 
       {/* Client Testimonials */}
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
